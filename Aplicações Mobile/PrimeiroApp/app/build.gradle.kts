@@ -5,13 +5,15 @@ plugins {
 android {
     namespace = "com.example.primeiroapp"
     compileSdk {
-        version = release(37)
+        version = release(36) {
+            minorApiLevel = 1
+        }
     }
 
     defaultConfig {
         applicationId = "com.example.primeiroapp"
         minSdk = 33
-        targetSdk = 37
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -20,9 +22,11 @@ android {
 
     buildTypes {
         release {
-            optimization {
-                enable = false
-            }
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -32,11 +36,11 @@ android {
 }
 
 dependencies {
-    implementation(libs.activity.ktx)
     implementation(libs.appcompat)
-    implementation(libs.constraintlayout)
     implementation(libs.material)
+    implementation(libs.activity)
+    implementation(libs.constraintlayout)
     testImplementation(libs.junit)
-    androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
 }
