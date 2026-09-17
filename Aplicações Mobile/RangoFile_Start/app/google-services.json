@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1075255576615",
+    "project_id": "applicationidrangonaregua",
+    "storage_bucket": "applicationidrangonaregua.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075255576615:android:1461f293e53644a017a602",
+        "android_client_info": {
+          "package_name": "br.edu.unisenai.rangonaregua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075255576615-jmma3u5031ek9f76s8u51lo6p0pts85h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.unisenai.rangonaregua",
+            "certificate_hash": "6b1a300066e92addce9209dfa62c083a7cb3ef42"
+          }
+        },
+        {
+          "client_id": "1075255576615-ipmjr28uf3m577n1890bmq95jobtc5oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsXnYIVqCNzvvW0FCFxWvnt2R935eU7NM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075255576615-ipmjr28uf3m577n1890bmq95jobtc5oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
